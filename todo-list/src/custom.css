@@ -1,0 +1,15 @@
+.block-shadow-lg {
+  filter: drop-shadow(8px 8px 0 #6a7282);
+}
+
+.block-shadow-sm {
+  filter: drop-shadow(2px 2px 0 #6a7282);
+}
+
+.button-effect {
+  transition: 0.3s;
+}
+
+.button-effect:hover {
+  filter: drop-shadow(2px 2px 0 #6a7282);
+}

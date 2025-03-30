@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/custom.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body class="bg-slate-900">
+    <!-- Main -->
+    <main class="md:mx-60 mb-8 min-h-screen">
+      <!-- Title -->
+      <h1 class="text-white text-center text-3xl pt-7">
+        <i class="fa-solid fa-table-list"></i> TODO APP
+      </h1>
+      <!-- Add Button -->
+      <a
+        href="./pages/add-todos.html"
+        class="button-effect inline-block my-10 ml-10 md:ml-0 bg-green-600 text-base px-8 py-2 rounded-lg border-2 border-black block-shadow-lg"
+      >
+        <i class="fa-solid fa-plus"></i> ADD TODO
+      </a>
+      <!-- Section -->
+      <section
+        id="card-todo"
+        class="mx-10 grid grid-cols-2 md:grid-cols-3 gap-10 justify-items-center"
+      >
+        <!-- List Todo -->
+        <!-- List Todo - End -->
+      </section>
+      <!-- Section - End -->
+    </main>
+    <!-- Main - End -->
+    <script type="module" src="./scripts/index.js"></script>
+  </body>
+</html>

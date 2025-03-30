@@ -1,0 +1,227 @@
+:root {
+  --background: #3d358b;
+  --primary: #101828;
+  --secondary: #1e293b;
+  --green: #1aff34;
+  --red: #ff3333;
+  --white: #ffffff;
+  --font-family: Arial, Helvetica, sans-serif;
+  --border-radius: 50px;
+  --transition: 0.3s ease;
+}
+
+* {
+  font-family: var(--font-family);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--white);
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+#title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#start-btn {
+  font-size: 1.5rem;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 1rem 5rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition);
+  text-align: center;
+}
+
+#start-btn:hover {
+  background-color: var(--secondary);
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 350px;
+}
+
+.dropdown-btn {
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 1rem;
+  border-radius: var(--border-radius);
+  padding: 0.75rem;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-btn::after {
+  content: "\25BC";
+  font-size: 0.875rem;
+  color: var(--white);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--primary);
+  margin-top: 0.5rem;
+  min-width: 100%;
+  border-radius: 20px;
+  z-index: 1;
+  padding: 0.5rem;
+}
+
+.dropdown-content div {
+  color: var(--white);
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  transition: background-color var(--transition);
+}
+
+.dropdown-content div:hover {
+  background-color: var(--secondary);
+}
+
+.show {
+  display: block;
+}
+
+.text-warning {
+  display: none;
+  margin-top: 10px;
+}
+
+/* Quiz Page */
+#timer {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  border-radius: var(--border-radius);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+#question {
+  font-weight: 300;
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+
+#select {
+  width: 500px;
+}
+
+.answer-area {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary);
+  width: 100%;
+  max-width: 500px;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  transition: background-color var(--transition);
+}
+
+.answer-area:hover {
+  background-color: rgba(16, 24, 40, 0.5);
+}
+
+input[type="radio"] {
+  margin-right: 1rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+label {
+  display: inline-block;
+  width: 90%;
+  font-size: 20px;
+  padding: 0.5rem 0;
+}
+
+.button-area {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 1rem;
+}
+
+#next-btn {
+  font-size: 16px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: var(--green);
+  color: var(--primary);
+  font-weight: bold;
+}
+
+#next-btn:hover {
+  cursor: pointer;
+  background-color: #18bd2c;
+}
+
+/* Result Page */
+h4 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+#result-quiz {
+  font-size: 4.5rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+#back-btn {
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 1.2rem;
+  padding: 0.75rem 3rem;
+  border-radius: var(--border-radius);
+  transition: background-color var(--transition);
+  cursor: pointer;
+}
+
+#back-btn:hover {
+  background-color: #cc2c2c;
+}

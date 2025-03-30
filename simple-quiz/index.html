@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Utama</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Simple Quiz</h1>
+      <section>
+        <button type="button" id="start-btn">Mulai</button>
+        <div class="dropdown">
+          <button class="dropdown-btn">Pilih Matkul</button>
+          <div class="dropdown-content">
+            <div data-value="Matematika">Matematika</div>
+            <div data-value="Sejarah">Sejarah</div>
+            <div data-value="IPA">IPA</div>
+            <div data-value="IPS">IPS</div>
+          </div>
+        </div>
+      </section>
+      <p class="text-warning">Pilih Mata Pelajaran terlebih dahulu</p>
+    </main>
+
+    <script src="./scripts/dropdown.js"></script>
+    <script src="./scripts/start.js"></script>
+  </body>
+</html>
