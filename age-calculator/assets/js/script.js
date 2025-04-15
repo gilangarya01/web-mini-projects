@@ -17,7 +17,7 @@ document.getElementById("count-btn").addEventListener("click", function () {
     selisihBulan--;
     selisihHari += getLastDayOfMonth(
       tanggalLahirDate.getMonth(),
-      tanggalLahirDate.getFullYear()
+      tanggalLahirDate.getFullYear(),
     );
   }
 

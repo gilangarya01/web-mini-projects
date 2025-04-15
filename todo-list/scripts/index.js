@@ -17,7 +17,7 @@ function generateTodoCard(todo, index) {
                 />
                 <label class="ms-2 text-sm font-medium">${item.name}</label>
               </div>
-            `
+            `,
           )
           .join("")}
       </div>
@@ -36,7 +36,7 @@ function generateTodoCard(todo, index) {
 // Handle detail button click
 function handleDetailButtonClick(event) {
   localStorage.setItem("idDetail", event.target.id);
-  window.location.href = "/pages/detail-todos.html";
+  window.location.href = "./pages/detail-todos.html";
 }
 
 // Handle delete button click
@@ -53,13 +53,13 @@ if (localStorage.getItem("myTodo")) {
   document
     .querySelectorAll(".detail-btn")
     .forEach((button) =>
-      button.addEventListener("click", handleDetailButtonClick)
+      button.addEventListener("click", handleDetailButtonClick),
     );
   document
     .querySelectorAll(".delete-btn")
     .forEach((button) =>
       button.addEventListener("click", () =>
-        handleDeleteButtonClick(button, dataAllTodo)
-      )
+        handleDeleteButtonClick(button, dataAllTodo),
+      ),
     );
 }

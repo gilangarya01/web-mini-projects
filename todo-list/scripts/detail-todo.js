@@ -55,7 +55,7 @@ function handleEditTodo() {
   };
 
   localStorage.setItem("myTodo", JSON.stringify(myTodo));
-  window.location.href = "/index.html"; // Redirect to main page
+  window.location.href = "../index.html"; // Redirect to main page
 }
 
 /**

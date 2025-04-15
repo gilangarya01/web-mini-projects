@@ -22,7 +22,7 @@ function handleSaveTodo() {
   if (titleTodo.value.trim()) {
     myTodo.push({ title: titleTodo.value.trim(), todoList: changeTodo() });
     localStorage.setItem("myTodo", JSON.stringify(myTodo));
-    window.location.href = "/index.html";
+    window.location.href = "../index.html";
   }
 }
 

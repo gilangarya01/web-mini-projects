@@ -49,6 +49,7 @@ table tr th {
   background-color: #393e46;
   box-shadow: 0 10px #0f1013;
   color: white;
+  transition-duration: 0.5s;
 }
 
 table tr th:hover {
